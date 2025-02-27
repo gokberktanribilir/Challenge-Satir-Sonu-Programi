@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Satir Sonu Programi</title>
+</head>
+<body>
+    <h1>Challenge Satir Sonu Programi</h1>
+    <script>
+function TextParser(text, wordCount) {
+    const words = text.split(" "); 
+    let result = []; 
+
+    for (let i = 0; i < words.length; i += wordCount) {
+        let line = words.slice(i, i + wordCount).join(" "); 
+        result.push(line);
+    }
+
+    return result.join("\n"); 
+}
+
+console.log(TextParser(text, 5));
+    </script>
+</body>
+</html>
